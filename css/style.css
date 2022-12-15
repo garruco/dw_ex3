@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+body {
+  height: 100vh;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  background: rgb(0, 2, 18);
+  -webkit-font-smoothing: antialiased;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  text-align: -webkit-center;
+}
+
+::selection {
+  background-color: pink;
+  color: white;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 916px;
+  width: calc(100% - 20px);
+  align-content: center;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.084);
+  height: 260px;
+  width: 300px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.3),
+    transparent 40%
+  );
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+  z-index: 2;
+}
+
+.magic {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(to right, purple, blue, purple);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+.text {
+  font-size: clamp(32px, 6vw, 64px);
+  width: clamp(24px, 60vw, 450px);
+  align-content: center;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.section {
+  position: relative;
+  margin-top: 150px;
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(0deg, #00bbff, #00bbff);
+  -webkit-mask-image: radial-gradient(100% 50%, black, transparent);
+  z-index: -2;
+}
+
+.separator {
+  height: 30px;
+  background: white;
+  width: 10%;
+  border-radius: 15px;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
