@@ -5,23 +5,178 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/fb6dcc2060.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body>
-    <div class="text">Professional <span class="magic">Experience</span></div>
-
-    <div id="cards">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+    <div class="nav">
+      <a href="#sobremim" class="nav-item"
+        ><span class="nav-num">01.</span><span class="nav-text">Sobre</span></a
+      >
+      <a href="#trabalhos" class="nav-item"
+        ><span class="nav-num">02.</span
+        ><span class="nav-text">Trabalhos</span></a
+      >
+      <a href="#percurso" class="nav-item"
+        ><span class="nav-num">03.</span
+        ><span class="nav-text">Percurso</span></a
+      >
+      <a href="#contactos" class="nav-item"
+        ><span class="nav-num">04.</span
+        ><span class="nav-text">Contactos</span></a
+      >
     </div>
-    <div class="section">
-      <div class="gradient"></div>
-      <div class="separator"></div>
-      <div class="text">Professional Experience</div>
+
+    <div class="wrapper">
+      <div class="section section-1">
+        <div class="background"></div>
+        <div class="maintext">
+          <div class="maintitle">GARRUCO</div>
+          <div
+            class="mainsub"
+            data-text="Mais do que um design, uma experiência"
+          >
+            Mais do que um design, uma experiência
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <a id="sobremim"></a>
+        <div class="title">Sobre <span class="magic">Mim</span></div>
+        <div class="about">
+          <div class="text">
+            Sou um designer apaixonado por criar soluções visuais atraentes e
+            eficazes que ajudem as empresas a atingir os seus objetivos de
+            comunicação. Com uma formação sólida em design gráfico e experiência
+            em vários projetos, sou capaz de criar trabalhos que são criativos,
+            esteticamente agradáveis e funcionais. No meu portfólio, pode ver
+            alguns dos meus trabalhos mais recentes e relevantes. Desde
+            logotipos e identidades de marca até materiais de marketing e
+            projetos de interface do utilizador, tenho experiência em uma ampla
+            gama de projetos de design.
+          </div>
+          <div class="skills">
+            <div class="bubble">Photoshop</div>
+            <div class="bubble">Illustrator</div>
+            <div class="bubble">InDesign</div>
+            <div class="bubble">Figma</div>
+            <div class="bubble">PhP</div>
+            <div class="bubble">Javascript</div>
+            <div class="bubble">Html & Css</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <a id="trabalhos"></a>
+        <div class="title"><span class="magic">Trabalhos</span></div>
+        <div class="work">
+          <div class="subtittlework">Tipografia em Meios Digitais</div>
+          <div class="tittlework">Animação Tipográfica</div>
+          <div class="textwork">
+            Técnica que pode ser usada em vídeos, apresentações ou outros
+            materiais de marketing para chamar a atenção do público e transmitir
+            a mensagem de forma mais eficaz.
+          </div>
+          <div class="image"><img src="img/work1.png" /></div>
+          <div class="skills">
+            <div class="bubble">After Effects</div>
+            <div class="bubble">Photoshop</div>
+          </div>
+        </div>
+        <div class="work">
+          <div class="subtittlework">Design em Meios de Interação</div>
+          <div class="tittlework">Phone & Flora</div>
+          <div class="textwork">
+            Um bom design em meios de interação deve ser fácil de usar,
+            intuitivo e atraente. Deve também levar em conta o contexto em que o
+            sistema será usado, as necessidades e expectativas dos usuários e as
+            restrições técnicas.
+          </div>
+          <div class="image"><img src="img/work2.png" /></div>
+          <div class="skills">
+            <div class="bubble">Figma</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <a id="percurso"></a>
+        <div class="title">Percurso <span class="magic">Académico</span></div>
+
+        <div class="menu">
+          <a class="short" onclick="show1()">
+            <div class="colapse colapse-content-title">
+              Licenciatura em Design e Multimédia @ UC
+            </div>
+            <div class="colapse date">2019-2022</div>
+            <div class="colapse colapse-expand" id="plus1">+</div>
+          </a>
+          <div class="colapse-about" id="colapse-about1" style="display: none">
+            <div class="colapse colapse-title">
+              - DEI, Pólo II da Universidade de Coimbra
+            </div>
+            <div class="colapse colapse-text">
+              Formação de base sólida em Design de Comunicação, em Multimédia e
+              em Tecnologia Informática
+            </div>
+            <div class="skills skills-colapse">
+              <div class="bubble">Design</div>
+              <div class="bubble">Programação</div>
+              <div class="bubble">Multimédia</div>
+            </div>
+          </div>
+          <div class="menu">
+            <a class="short" onclick="show2()">
+              <div class="colapse colapse-content-title">
+                Mestrado em Design e Multimédia @ UC
+              </div>
+              <div class="colapse date">2019-2022</div>
+              <div class="colapse colapse-expand" id="plus2">+</div>
+            </a>
+            <div
+              class="colapse-about"
+              id="colapse-about2"
+              style="display: none"
+            >
+              <div class="colapse colapse-title">
+                - DEI, Pólo II da Universidade de Coimbra
+              </div>
+              <div class="colapse colapse-text">
+                Formação sólida em Design de Comunicação, em Multimédia e em
+                Tecnologia Informática
+              </div>
+              <div class="skills skills-colapse">
+                <div class="bubble">Design</div>
+                <div class="bubble">Programação</div>
+                <div class="bubble">Multimédia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <a id="contactos"></a>
+        <div class="title"><span class="magic">Contactos</span></div>
+        <div id="cards">
+          <div class="card">
+            <div class="social">Github</div>
+            <i class="logos fa-brands fa-github"></i>
+          </div>
+          <div class="card">
+            <div class="social">Instagram</div>
+            <i class="logos fa-brands fa-instagram"></i>
+          </div>
+          <div class="card">
+            <div class="social">E-mail</div>
+            <div class="email">pedro@garruco.pt</div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script src="/src/script.js"></script>
