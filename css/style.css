@@ -193,7 +193,7 @@ header {
 
 .background {
   position: absolute;
-  background-image: url(img/bgmain.png);
+  background-image: url(/dw_ex3/img/bgmain.png);
   background-position: center;
   background-size: cover;
   height: 60%;
