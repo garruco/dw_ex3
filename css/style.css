@@ -162,7 +162,7 @@ a:active {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.084);
+  linear-gradient: 90deg, rgba(47, 47, 47, 0.75) 0%, rgba(47, 47, 47, 0.675) 100%, rgba(47, 47, 47, 0.675) 100%;
   height: 260px;
   width: 300px;
   position: relative;
@@ -393,6 +393,9 @@ a:active {
     width: 100%;
     height: auto;
   }
+  .background {
+    width: 350px;
+  }
 }
 .work {
   margin-bottom: 15px;
@@ -490,6 +493,15 @@ img {
   .image {
     width: 100%;
     height: auto;
+  }
+  .nav {
+    position: fixed;
+    padding: 15px 0;
+    flex-direction: column;
+    width: 100%;
+    height: 12rem;
+    gap: 2rem;
+    background: none;
   }
 }
 @media screen and (max-width: 1000px) {
