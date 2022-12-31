@@ -181,6 +181,10 @@ header {
 }
 .nav-text {
   font-weight: 600;
+  transition: 0.5s;
+}
+.nav-text:hover {
+  color: #60ffc6;
 }
 
 .wrapper {
