@@ -44,6 +44,7 @@ header {
   height: 100%;
   position: fixed;
   z-index: 2;
+  visibility: hidden;
 }
 
 .menu {
@@ -585,9 +586,6 @@ img {
 .section:last-child {
   padding-bottom: 50px;
 }
-nav {
-  visibility: hidden;
-}
 
 @media screen and (max-width: 600px) {
   .bubble {
@@ -628,7 +626,7 @@ nav {
   .nav {
     visibility: hidden;
   }
-  nav {
+  header {
     visibility: visible;
   }
 }
