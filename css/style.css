@@ -277,6 +277,10 @@ a:active {
   max-width: 916px;
   width: calc(80% - 20px);
   padding: 2.5rem 1rem;
+  transition: 1s;
+}
+.about:hover {
+  background-color: #656565;
 }
 
 .text {
@@ -327,6 +331,10 @@ a:active {
   align-items: center;
   height: 50px;
   font-weight: 600;
+  transition: 1s;
+}
+.short:hover {
+  background-color: #656565;
 }
 
 .short:hover {
@@ -338,6 +346,7 @@ a:active {
   width: 100%;
   text-align: left;
   color: white;
+  transition: 1s;
 }
 .colapse-about {
   display: none;
@@ -349,6 +358,10 @@ a:active {
   width: calc(80% - 20px);
   padding: 1.5rem 1.5rem;
   margin-bottom: 1rem;
+  transition: 1s;
+}
+.colapse-about:hover {
+  background-color: #656565;
 }
 .colapse-title {
   color: white;
@@ -406,6 +419,10 @@ a:active {
   max-width: 916px;
   width: calc(80% - 20px);
   padding: 2rem;
+  transition: 1s;
+}
+.work:hover {
+  background-color: #656565;
 }
 
 .tittlework {
