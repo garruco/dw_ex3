@@ -45,3 +45,12 @@ function show2() {
     plus2.innerHTML = "+";
   }
 }
+
+var $menuHamburguer = document.querySelector(".menu-hamburguer"),
+  $spanHamburguer = document.querySelector(".span-hamburguer");
+$menu = document.querySelector(".menu");
+
+$menuHamburguer.addEventListener("click", function () {
+  this.classList.toggle("active");
+  $menu.classList.toggle("active");
+});
